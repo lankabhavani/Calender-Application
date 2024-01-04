@@ -1,0 +1,57 @@
+h1{
+    color:black;
+    border :2px black;
+    padding: 20px;
+}
+body {
+    background-color:rgb(219, 217, 72);
+}
+
+.calendar {
+    max-width: 700px;  
+    margin: auto;
+    border: 1px solid #581d39;
+    padding: 10px;
+    background-color:rgb(72, 129, 143);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color:rgb(152, 38, 180);
+}
+
+#monthYear {
+    font-size: 1.5rem;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.day {
+    text-align: center;
+    padding: 5px;
+}
+
+.cells {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.cell {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #1a1515;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #2f75c5;
+}
